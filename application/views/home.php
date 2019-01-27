@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <head>
         <meta charset=utf-8>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pluton Theme by BraphBerry.com</title>
+        <title>Dinas Perhubungan Kota Surakarta</title>
         <!-- Load Roboto font -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <!-- Load css styles -->
@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-114.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url() ?>assets/images/apple-touch-icon-72.png">
         <link rel="apple-touch-icon-precomposed" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-57.png">
-        <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/ico/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/dis/logodepan.png">
     </head>
     
     <body>
