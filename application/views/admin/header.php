@@ -15,12 +15,6 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
     <link href="<?php echo base_url() ?>assets/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
-    <!-- iCheck -->
-    <link href="<?php echo base_url() ?>assets/plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
-    <!-- Morris chart -->
-    <link href="<?php echo base_url() ?>assets/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
-    <!-- jvectormap -->
-    <link href="<?php echo base_url() ?>assets/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
     <!-- Date Picker -->
     <link href="<?php echo base_url() ?>assets/plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
     <!-- Daterange picker -->
@@ -35,6 +29,11 @@
     <!-- jQuery 2.1.3 -->
     <script src="<?php echo base_url() ?>assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
     
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="<?php echo base_url() ?>assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- DATA TABES SCRIPT -->
+    <script src="<?php echo base_url() ?>assets/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="<?php echo base_url() ?>assets/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -57,8 +56,8 @@
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
               <!-- Messages: style can be found in dropdown.less-->
-              <li class="dropdown messages-menu" alt="Keluar" title="Keluar">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <li class="" alt="Keluar" title="Keluar">
+                <a href="<?php echo base_url() ?>admin/logout" class="" >
                   <i class="fa fa-power-off"></i>
                 </a>
               </li>
@@ -76,29 +75,22 @@
               <img src="<?php echo base_url() ?>assets/images/logo-dinas-perhubungan-1-150x150.png" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-              <p>Username</p>
+              <p><?php echo $this->session->userdata('username') ?></p>
 
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
           </div>
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">NAVIGASI UTAMA</li>
             <li>
               <a href="<?php echo base_url() ?>admin">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
               </a>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-folder"></i> <span>Posts</span>
-                <i class="fa fa-angle-left pull-right"></i>
-                <small class="label pull-right bg-green">1</small>
+            <li>
+              <a href="<?php echo base_url() ?>admin/posts">
+                <i class="fa fa-paper"></i> <span>Berita</span>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="<?php echo base_url() ?>admin/posts"><i class="fa fa-circle-o"></i> All Posts</a></li>
-                <li><a href="<?php echo base_url() ?>admin/newpost"><i class="fa fa-circle-o"></i> New Post</a></li>
-              </ul>
             </li>
             <li><a href=""><i class="fa fa-gear"></i> Pengaturan</a></li>
           </ul>
