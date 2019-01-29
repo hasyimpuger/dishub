@@ -63,6 +63,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
         </div>
+        <!-- background video landing page -->
+        <div class="video-background">
+            <div class="baris">
+                <div class="kolom" style="Scolumn-width:60%">
+                    <ul>
+                        <li><a href="#/"><img class="image" src="assets/images/bunderan/IconBST.png"><div class="overlay"><img class="text" src="assets/images/bunderan/IconBST2-1.png"></div></a></li>
+                        <li><a href="#/"><img class="image" src="assets/images/bunderan/IconBST.png"><div class="overlay"><img class="text" src="assets/images/bunderan/IconBST2-1.png"></div></a></li>
+                        <li><a href="#/"><img class="image" src="assets/images/bunderan/IconBST.png"><div class="overlay"><img class="text" src="assets/images/bunderan/IconBST2-1.png"></div></a></li>
+                    </ul>   
+                    <ul>
+                    <li><a href="#/"><img class="image" src="assets/images/bunderan/IconBST.png"><div class="overlay"><img class="text" src="assets/images/bunderan/IconBST2-1.png"></div></a></li>
+                    <li><a href="#/"><img class="image" src="assets/images/bunderan/IconBST.png"><div class="overlay"><img class="text" src="assets/images/bunderan/IconBST2-1.png"></div></a></li>
+                    <li><a href="#/"><img class="image" src="assets/images/bunderan/IconBST.png"><div class="overlay"><img class="text" src="assets/images/bunderan/IconBST2-1.png"></div></a></li>
+                    </ul>   
+                </div>
+                <div class="kolom" style="background-color:#bbb;">
+                     <h2>Column 2</h2>
+                        <p>Some text..</p>
+                 </div>
+            </div>
+        </div>
         <!-- Start home section -->
         <div id="home">
             <!-- Start cSlider -->
@@ -585,8 +606,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <!-- Portfolio section end -->
         <!-- About us section start -->
-        <div class="section primary-section" id="about" style="background-color:#c5c5c5">
-            <div class="triangle"></div>
+        <div class="telp" id="about" style="background-color:grey" >
             <div class="container">
                 <div class="title">
                     <h3>Info Seputar Dinas Perhubungan</h3>
@@ -673,7 +693,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                         </div>
                     </div>
-                </div>
+                </div></div>
               <!--  <div class="about-text centered">
                     <h3>About Us</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -871,7 +891,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>-->
         <!-- Price section end -->
         <!-- Newsletter section start -->
-        <br>
+        <br><div>
         <div class="telp">
         <div class="section third-section">
             <div class="container newsletter">
