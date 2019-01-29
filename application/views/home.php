@@ -15,6 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <title>Dinas Perhubungan Kota Surakarta</title>
         <!-- Load Roboto font -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <!-- Load css styles -->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap-responsive.css" />
@@ -76,9 +77,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <h2 class="fittext2">Si Djaka</h2>
                         <h4>Clean & responsive</h4>
                         <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-                        <a href="#" class="da-link button">Read more</a>
+                        <a href="#" class="da-link button">Readmore</a>
                         <div class="da-img">
-                            <img src="<?php echo base_url() ?>assets/images/Slider01.png" alt="image01" width="320">
+                            <img src="<?php echo base_url() ?>assets/images/bunderan/IconSijaka2.png" alt="image01" width="320" background-color="white">
                         </div>
                     </div>
                     <!-- End first slide -->
@@ -105,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <!-- End third slide -->
                     <div class="da-slide">
-                        <h2 class="fittext2">Si Djaka</h2>
+                        <h2 class="fittext2">Jaladara Werkudara</h2>
                         <h4>Clean & responsive</h4>
                         <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
                         <a href="#" class="da-link button">Read more</a>
@@ -114,7 +115,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                     <div class="da-slide">
-                        <h2 class="fittext2">Si Djaka</h2>
+                        <h2 class="fittext2">BST</h2>
                         <h4>Clean & responsive</h4>
                         <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
                         <a href="#" class="da-link button">Read more</a>
@@ -123,7 +124,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                     <div class="da-slide">
-                        <h2 class="fittext2">Si Djaka</h2>
+                        <h2 class="fittext2">Derek Gratis</h2>
                         <h4>Clean & responsive</h4>
                         <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
                         <a href="#" class="da-link button">Read more</a>
@@ -183,7 +184,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
         <!-- Service section end -->
-        <!-- Portfolio section start -->
+        <!-- Portfolio section start --> <!--
         <div class="section secondary-section " id="portfolio">
             <div class="triangle"></div>
             <div class="container">
@@ -204,8 +205,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li class="filter" data-filter="identity">
                         <a href="#noAction">Identity</a>
                     </li>
-                </ul>
-                <!-- Start details for portfolio project 1 -->
+                </ul> -->
+                <!-- Start details for portfolio project 1 --> <!--
                 <div id="single-project">
                     <div id="slidingDiv" class="toggleDiv row-fluid single-project">
                         <div class="span6">
@@ -232,9 +233,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <p>Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End details for portfolio project 1 -->
-                    <!-- Start details for portfolio project 2 -->
+                    <!-- Start details for portfolio project 2 --> <!--
                     <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="<?php echo base_url() ?>assets/images/Portfolio02.png" alt="project 2">
@@ -260,9 +261,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <p>Life is a song - sing it. Life is a game - play it. Life is a challenge - meet it. Life is a dream - realize it. Life is a sacrifice - offer it. Life is love - enjoy it.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End details for portfolio project 2 -->
-                    <!-- Start details for portfolio project 3 -->
+                    <!-- Start details for portfolio project 3 --><!--
                     <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="<?php echo base_url() ?>assets/images/Portfolio03.png" alt="project 3">
@@ -288,9 +289,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <p>How far you go in life depends on your being tender with the young, compassionate with the aged, sympathetic with the striving and tolerant of the weak and strong. Because someday in your life you will have been all of these.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End details for portfolio project 3 -->
-                    <!-- Start details for portfolio project 4 -->
+                    <!-- Start details for portfolio project 4 --><!--
                     <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="<?php echo base_url() ?>assets/images/Portfolio04.png" alt="project 4">
@@ -316,9 +317,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <p>Life's but a walking shadow, a poor player, that struts and frets his hour upon the stage, and then is heard no more; it is a tale told by an idiot, full of sound and fury, signifying nothing.</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <!-- End details for portfolio project 4 -->
-                    <!-- Start details for portfolio project 5 -->
+                    <!-- Start details for portfolio project 5 --><!--
                     <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="<?php echo base_url() ?>assets/images/Portfolio05.png" alt="project 5">
@@ -344,9 +345,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <p>We need to give each other the space to grow, to be ourselves, to exercise our diversity. We need to give each other space so that we may both give and receive such beautiful things as ideas, openness, dignity, joy, healing, and inclusion.</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <!-- End details for portfolio project 5 -->
-                    <!-- Start details for portfolio project 6 -->
+                    <!-- Start details for portfolio project 6 --><!--
                     <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="<?php echo base_url() ?>assets/images/Portfolio06.png" alt="project 6">
@@ -372,9 +373,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <p>I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <!-- End details for portfolio project 6 -->
-                    <!-- Start details for portfolio project 7 -->
+                    <!-- Start details for portfolio project 7 --><!--
                     <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="<?php echo base_url() ?>assets/images/Portfolio07.png" alt="project 7">
@@ -400,9 +401,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <p>Always continue the climb. It is possible for you to do whatever you choose, if you first get to know who you are and are willing to work with a power that is greater than ourselves to do it.</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <!-- End details for portfolio project 7 -->
-                    <!-- Start details for portfolio project 8 -->
+                    <!-- Start details for portfolio project 8 --><!--
                     <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="<?php echo base_url() ?>assets/images/Portfolio08.png" alt="project 8">
@@ -428,9 +429,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <p>What if you gave someone a gift, and they neglected to thank you for it - would you be likely to give them another? Life is the same way. In order to attract more of the blessings that life has to offer, you must truly appreciate what you already have.</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <!-- End details for portfolio project 8 -->
-                    <!-- Start details for portfolio project 9 -->
+                    <!-- Start details for portfolio project 9 --><!--
                     <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
                         <div class="span6">
                             <img src="<?php echo base_url() ?>assets/images/Portfolio09.png" alt="project 9">
@@ -456,8 +457,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <p>I learned that we can do anything, but we can't do everything... at least not at the same time. So think of your priorities not in terms of what activities you do, but when you do them. Timing is everything.</p>
                             </div>
                         </div>
-                    </div>
-                    <!-- End details for portfolio project 9 -->
+                    </div>-->
+                    <!-- End details for portfolio project 9 --><!--
                     <ul id="portfolio-grid" class="thumbnails row">
                         <li class="span4 mix web">
                             <div class="thumbnail">
@@ -561,21 +562,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </ul>
                 </div>
             </div>
+        </div>-->
+        <div class="off">
+            <br>
+            <h1> OFFICIAL SITE DINAS PERHUBUNGAN KOTA SURAKARTA</h1>
+            <p>Dinas Perhubungan Kota Surakarta Menyelenggarakan Urusan <br>
+                Pemerintahan di Bidang Lalu Lintas, Angkutan dan Teknis<br> Sarana dan Prasarana. 
+                Dinas Perhubungan Kota Surakarta<br> terbagi menjadi empat bidang, yaitu :
+            </p>
+            <div> 
+                <ul>
+                    <li><a href="#/"><img src="assets/images/dis/Icon-Uji.png"><h4>bidang pengujian</h4></a></li>
+                    <li><a href="#/"><img src="assets/images/dis/icon-Lalin.png" ><h4>bidang pengujian</h4></a></li>
+                    <li><a href="#/"><img src="assets/images/dis/icon-Parkir.png" ><h4>bidang pengujian</h4></a></li>
+                    <li><a href="#/"><img src="assets/images/dis/icon-angkutan.png" ><h4>bidang pengujian</h4></a></li>
+                    <li><a href="#/"><img src="assets/images/dis/icon-sekre.png" ><h4>bidang pengujian</h4></a></li>
+                </ul>   
+             </div>
+        </div>
+        <div class="call">
+            <h1>CALL CENTER 08112654322</h1>
         </div>
         <!-- Portfolio section end -->
         <!-- About us section start -->
-        <div class="section primary-section" id="about">
+        <div class="section primary-section" id="about" style="background-color:#c5c5c5">
             <div class="triangle"></div>
             <div class="container">
                 <div class="title">
-                    <h1>Who We Are?</h1>
-                    <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+                    <h3>Info Seputar Dinas Perhubungan</h3>
                 </div>
                 <div class="row-fluid team">
                     <div class="span4" id="first-person">
                         <div class="thumbnail">
-                            <img src="<?php echo base_url() ?>assets/images/Team1.png" alt="team 1">
-                            <h3>John Doe</h3>
+                            <img src="<?php echo base_url() ?>assets/images/dis/261118-ijin-angkutan-barang-4.jpg" alt="team 1">
+                            <h3>Lalu Lintas</h3>
                             <ul class="social">
                                 <li>
                                     <a href="">
@@ -601,8 +621,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="span4" id="second-person">
                         <div class="thumbnail">
-                            <img src="<?php echo base_url() ?>assets/images/Team2.png" alt="team 1">
-                            <h3>John Doe</h3>
+                            <img src="<?php echo base_url() ?>assets/images/dis/221118-kader-keselamatan-1.jpg" alt="team 1">
+                            <h3>Seputar Kota</h3>
                             <ul class="social">
                                 <li>
                                     <a href="">
@@ -628,8 +648,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="span4" id="third-person">
                         <div class="thumbnail">
-                            <img src="<?php echo base_url() ?>assets/images/Team3.png" alt="team 1">
-                            <h3>John Doe</h3>
+                            <img src="<?php echo base_url() ?>assets/images/dis/FeederBST.jpg" alt="team 1">
+                            <h3>Transportasi</h3>
                             <ul class="social">
                                 <li>
                                     <a href="">
@@ -654,7 +674,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                 </div>
-                <div class="about-text centered">
+              <!--  <div class="about-text centered">
                     <h3>About Us</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
                 </div>
@@ -689,18 +709,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- About us section end -->
+        </div> -->
+        <!-- About us section end --><!--
         <div class="section secondary-section">
             <div class="triangle"></div>
             <div class="container centered">
                 <p class="large-text">Elegance is not the abundance of simplicity. It is the absence of complexity.</p>
                 <a href="#" class="button">Purshase now</a>
             </div>
-        </div>
+        </div>-->
         <!-- Client section start -->
         <!-- Client section start -->
-        <div id="clients">
+      <!--  <div id="clients">
             <div class="section primary-section">
                 <div class="triangle"></div>
                 <div class="container">
@@ -803,8 +823,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </ul>
                 </div>
             </div>
-        </div>
-        <!-- Price section start -->
+        </div>-->
+        <!-- Price section start --><!--
         <div id="price" class="section secondary-section">
             <div class="container">
                 <div class="title">
@@ -848,9 +868,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <a href="#contact" class="button">Contact Us</a>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- Price section end -->
         <!-- Newsletter section start -->
+        <br>
+        <div class="telp">
         <div class="section third-section">
             <div class="container newsletter">
                 <div class="sub-section">
@@ -970,6 +992,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <!-- Contact section edn -->
         <!-- Footer section start -->
