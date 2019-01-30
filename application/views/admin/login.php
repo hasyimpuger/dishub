@@ -38,7 +38,6 @@
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
           <div class="row">
-            
             <div class="col-xs-4 pull-right">
               <button type="submit" class="btn btn-primary btn-block btn-flat">Masuk</button>
             </div><!-- /.col -->

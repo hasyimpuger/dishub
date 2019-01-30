@@ -17,8 +17,6 @@
     <link href="<?php echo base_url() ?>assets/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
     <!-- iCheck -->
     <link href="<?php echo base_url() ?>assets/plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
-    <!-- Morris chart -->
-    <link href="<?php echo base_url() ?>assets/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
     <!-- jvectormap -->
     <link href="<?php echo base_url() ?>assets/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
     <!-- Date Picker -->
@@ -89,10 +87,10 @@
             </li> -->
            <li>
               <a href="<?php echo base_url() ?>admin/posts">
-                <i class="fa fa-paper"></i> <span>Data Berita</span>
+                <i class="glyphicon glyphicon-file"></i> <span>Data Berita</span>
               </a>
             </li>
-            <li><a href=""><i class="fa fa-gear"></i> Pengaturan</a></li>
+            <li><a href="<?php echo base_url() ?>admin/pengaturan"><i class="fa fa-gear"></i> Pengaturan</a></li>
           </ul>
         </section>
         <!-- /.sidebar -->
@@ -261,18 +259,11 @@
     </script>
     <!-- Bootstrap 3.3.2 JS -->
     <script src="<?php base_url() ?>assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>    
-    <!-- Morris.js charts -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="<?php base_url() ?>assets/plugins/morris/morris.min.js" type="text/javascript"></script>
-    <!-- Sparkline -->
-    <script src="<?php base_url() ?>assets/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
     <!-- jvectormap -->
     <script src="<?php base_url() ?>assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
     <script src="<?php base_url() ?>assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
     <!-- jQuery Knob Chart -->
     <script src="<?php base_url() ?>assets/plugins/knob/jquery.knob.js" type="text/javascript"></script>
-    <!-- daterangepicker -->
-    <script src="<?php base_url() ?>assets/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
     <!-- datepicker -->
     <script src="<?php base_url() ?>assets/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
     <!-- Bootstrap WYSIHTML5 -->

@@ -34,6 +34,9 @@
     <!-- DATA TABES SCRIPT -->
     <script src="<?php echo base_url() ?>assets/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
     <script src="<?php echo base_url() ?>assets/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+    <!-- SWEETALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -89,10 +92,10 @@
               </a>
             <li>
               <a href="<?php echo base_url() ?>admin/posts">
-                <i class="fa fa-paper"></i> <span>Berita</span>
+                <i class="glyphicon glyphicon-file"></i> <span>Berita</span>
               </a>
             </li>
-            <li><a href=""><i class="fa fa-gear"></i> Pengaturan</a></li>
+            <li><a href="<?php echo base_url() ?>admin/pengaturan"><i class="fa fa-gear"></i> Pengaturan</a></li>
           </ul>
         </section>
         <!-- /.sidebar -->

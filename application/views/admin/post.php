@@ -6,10 +6,9 @@
   </h1>
   <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-dashboard"></i> Berita</a></li>
-    <li class="active">Manajemen Barita</li>
+    <li class="active">Manajemen Berita</li>
   </ol>
 </section>
-
 <!-- Main content -->
 <section class="content">
   <div class='row'>
@@ -25,7 +24,6 @@
                 <th>Judul</th>
                 <th>Konten</th>
                 <th>Tanggal</th>
-                <th>Penulis</th>
                 <th>Aksi</th>
               </tr>
             </thead>
@@ -43,125 +41,108 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h3 class="modal-title" id="myModalLabel">Tambah Berita</h3>
               </div>
-              <form class="form-horizontal">
+              <form class="form-horizontal" id="form-tambah">
                 <div class="modal-body">
 
                   <div class="form-group">
-                    <label class="control-label col-xs-3" >Judul Berita</label>
-                    <div class="col-xs-9">
-                      <input name="judul" id="judul" class="form-control" type="text" placeholder="Judul Berita" style="width:335px;" required>
+                    <div class="col-xs-12">
+                      <input name="judul" id="judul" class="form-control" type="text" placeholder="Judul Berita" required>
                     </div>
                   </div>
 
                   <div class="form-group">
                     <div class="col-xs-12">
                      <textarea id="konten" name="konten" rows="10" cols="80"></textarea>
-                    </div>
-                  </div>
+                   </div>
+                 </div>
 
-                  <div class="form-group">
-                    <label class="control-label col-xs-3" >Thumbnail berita</label>
-                    <div class="col-xs-9">
-                      <input name="gambar" id="gambar" class="form-control" type="text" placeholder="Konten Berita" style="width:335px;" required>
-                    </div>
+                 <div class="form-group">
+                  <label class="control-label col-xs-3" >Thumbnail berita</label>
+                  <div class="col-xs-9">
+                    <input name="gambar" id="gambar" class="form-control-file" type="file" required>
                   </div>
-
-                  <div class="form-group">
-                    <div class="col-xs-9">
-                      <input name="id_user" id="id_user" value="1" type="text" hidden>
-                    </div>
-                  </div>
-
                 </div>
-
-                <div class="modal-footer">
-                  <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
-                  <button class="btn btn-info" id="btn_simpan">Simpan</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!--END MODAL ADD-->
-
-        <!-- MODAL EDIT -->
-        <div class="modal fade" id="ModalaEdit" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 class="modal-title" id="myModalLabel">Edit Berita</h3>
               </div>
-              <form class="form-horizontal">
-                <div class="modal-body">
-
-                  <div class="form-group">
-                    <label class="control-label col-xs-3" >Judul Berita</label>
-                    <div class="col-xs-9">
-                      <input name="judul_edit" id="judul2" class="form-control" type="text" placeholder="Judul Berita" style="width:335px;" required>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <div class="col-xs-9">
-                      <textarea id="konten2" name="konten_edit" rows="10" cols="80"></textarea>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="control-label col-xs-3" >Thumbnail Berita</label>
-                    <div class="col-xs-9">
-                      <input name="gambar_edit" id="gambar2" class="form-control" type="text" placeholder="Konten Berita" style="width:335px;" required>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <div class="col-xs-9">
-                      <input name="id_user_edit" id="id_user2" value="1" type="text" hidden>
-                      <input name="id_edit" id="id2" type="text" hidden>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="modal-footer">
-                  <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
-                  <button class="btn btn-info" id="btn_update">Update</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!--END MODAL EDIT-->
-
-        <!--MODAL HAPUS-->
-        <div class="modal fade" id="ModalHapus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
-                <h4 class="modal-title" id="myModalLabel">Hapus Berita</h4>
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
+                <button class="btn btn-info" type="submit" id="btn_simpan" onClick="CKupdate();">Simpan</button>
               </div>
-              <form class="form-horizontal">
-                <div class="modal-body">
-
-                  <input type="hidden" name="kode" id="textkode" value="">
-                  <div class="alert alert-warning"><p>Apakah Anda yakin mau memhapus berita ini?</p></div>
-
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                  <button class="btn_hapus btn btn-danger" id="btn_hapus">Hapus</button>
-                </div>
-              </form>
-            </div>
+            </form>
           </div>
         </div>
-        <!--END MODAL HAPUS-->
-
       </div>
-    </div><!-- /.box -->
-  </div>
+      <!--END MODAL ADD-->
+
+      <!-- MODAL EDIT -->
+      <div class="modal fade" id="ModalaEdit" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h3 class="modal-title" id="myModalLabel">Edit Berita</h3>
+            </div>
+            <form class="form-horizontal" id="form-update">
+              <div class="modal-body">
+
+                <div class="form-group">
+                  <div class="col-xs-12">
+                    <input name="judul_edit" id="judul2" class="form-control" type="text" placeholder="Judul Berita" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-xs-12">
+                    <textarea id="konten2" name="konten_edit" rows="10" cols="80"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-xs-3" >Thumbnail Berita</label>
+                  <div class="col-xs-9">
+                    <input name="gambar_edit" id="gambar2" class="form-control-file" type="file" required>
+                    <input name="id_edit" id="id2" hidden>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
+                <button class="btn btn-info" id="btn_update" onClick="CKupdate();">Update</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--END MODAL EDIT-->
+
+      <!--MODAL HAPUS-->
+      <div class="modal fade" id="ModalHapus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title" id="myModalLabel">Hapus Berita</h4>
+            </div>
+            <form class="form-horizontal">
+              <div class="modal-body">
+
+                <input type="hidden" name="kode" id="textkode" value="">
+                <div class="alert alert-warning"><p>Apakah Anda yakin mau menghapus berita ini?</p></div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                <button class="btn_hapus btn btn-danger" id="btn_hapus">Hapus</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--END MODAL HAPUS-->
+
+    </div>
+  </div><!-- /.box -->
+</div>
 </section><!-- /.content -->
 <!-- page script -->
 <script>
@@ -183,11 +164,12 @@
           for(i=0; i<data.length; i++){
             html += '<tr>'+
             '<td>'+data[i].judul+'</td>'+
-            '<td>'+data[i].konten+'</td>'+
+            '<td>'+data[i].konten.substr(0,100)+'... </td>'+
             '<td>'+data[i].tanggal_post+'</td>'+
-            '<td>'+data[i].id_user+'</td>'+
+            // '<td>'+data[i].id_user+'</td>'+
             '<td style="text-align:right;">'+
-            '<a href="javascript:;" class="btn btn-info btn-xs item_edit" data="'+data[i].id+'"> <i class="fa fa-pencil"></i> Sunting</a>'+' '+
+            '<a href="javascript:;" class="btn btn-success btn-xs item_lihat" data="'+data[i].id+'"> <i class="fa fa-eye"></i> Lihat</a>'+' '+
+            '<a href="javascript:;" class="btn btn-info btn-xs item_edit" data="'+data[i].id+'"> <i class="fa fa-edit"></i> Sunting</a>'+' '+
             '<a href="javascript:;" class="btn btn-danger btn-xs item_hapus" data="'+data[i].id+'"> <i class="fa fa-trash"></i> Hapus</a>'+
             '</td>'+
             '</tr>';
@@ -210,9 +192,8 @@
             $('#ModalaEdit').modal('show');
             $('[name="id_edit"]').val(data.id);
             $('[name="judul_edit"]').val(data.judul);
-            $('[name="konten_edit"]').val(data.konten);
+            CKEDITOR.instances['konten2'].setData(data.konten);
             $('[name="gambar_edit"]').val(data.gambar);
-            $('[name="id_user_edit"]').val(data.id_user);
           });
         }
       });
@@ -222,56 +203,62 @@
 
     //GET HAPUS
     $('#show_data').on('click','.item_hapus',function(){
-      var id=$(this).attr('data');
+      var id = $(this).attr('data');
       $('#ModalHapus').modal('show');
       $('[name="kode"]').val(id);
     });
 
     //Simpan berita
-    $('#btn_simpan').on('click',function(){
-      var id           = $('#id').val();
-      var judul        = $('#judul').val();
-      var konten       = $('#konten').val();
-      var gambar       = $('#gambar').val();
-      var id_user      = $('#id_user').val();
+    $('#form-tambah').submit(function(e){
+      e.preventDefault();
       $.ajax({
         type : "POST",
         url  : "<?php echo base_url('admin/simpan_berita')?>",
-        dataType : "JSON",
-        data : {id:id , judul:judul, konten:konten, gambar:gambar, id_user:id_user},
+        data : new FormData(this),
+        processData : false,
+        contentType : false,
+        cache : false,
+        async : false,
         success: function(data){
           $('[name="id"]').val("");
           $('[name="judul"]').val("");
-          $('[name="konten"]').val("");
+          CKEDITOR.instances['konten'].setData("");
           $('[name="gambar"]').val("");
-          $('[name="id_user"]').val("");
           $('#ModalaAdd').modal('hide');
           tampil_data_berita();
+          Swal.fire(
+            'Berhasil!',
+            'Berita berhasil ditambahakan!',
+            'success'
+          )
         }
       });
       return false;
     });
 
     //Update berita
-    $('#btn_update').on('click',function(){
-      var id     = $('#id2').val();
-      var judul  = $('#judul2').val();
-      var konten = $('#konten2').val();
-      var gambar = $('#gambar2').val();
-      var id_user = $('#id_user2').val();
+    $('#form-update').submit(function(e){
+      e.preventDefault();
       $.ajax({
         type : "POST",
         url  : "<?php echo base_url('admin/update_berita')?>",
-        dataType : "JSON",
-        data : {id:id , judul:judul, konten:konten, gambar:gambar, id_user:id_user},
+        data : new FormData(this),
+        processData : false,
+        contentType : false,
+        cache : false,
+        async : false,
         success: function(data){
           $('[name="id_edit"]').val("");
           $('[name="judul_edit"]').val("");
-          $('[name="konten_edit"]').val("");
+          CKEDITOR.instances['konten2'].setData("");
           $('[name="gambar_edit"]').val("");
-          $('[name="id_user_edit"]').val("");
           $('#ModalaEdit').modal('hide');
           tampil_data_berita();
+          Swal.fire(
+            'Berhasil!',
+            'Berita berhasil diubah!',
+            'success'
+          )
         }
       });
       return false;
@@ -288,6 +275,11 @@
         success: function(data){
           $('#ModalHapus').modal('hide');
           tampil_data_berita();
+          Swal.fire(
+            'Berhasil!',
+            'Berita berhasil dihapus!',
+            'success'
+          )
         }
       });
       return false;
@@ -296,12 +288,16 @@
   });
 </script>
 <script type="text/javascript">
-      $(function () {
-        // Replace the <textarea id="editor1"> with a CKEditor
-        // instance, using default configuration.
-        CKEDITOR.replace('konten');
-        CKEDITOR.replace('konten2');
-        //bootstrap WYSIHTML5 - text editor
-        $(".textarea").wysihtml5();
-      });
-    </script>
+function CKupdate(){
+    for ( instance in CKEDITOR.instances )
+        CKEDITOR.instances[instance].updateElement();
+}
+  $(function () {
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace('konten');
+    CKEDITOR.replace('konten2');
+    //bootstrap WYSIHTML5 - text editor
+    $(".textarea").wysihtml5();
+  });
+</script>
