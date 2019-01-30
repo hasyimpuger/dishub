@@ -357,7 +357,7 @@ p {
     font-weight: lighter;
 }
 .primary-section {
-    background:#181A1C;
+    background: black;
 }
 .primary-section .triangle {
     border-top: 40px solid #c5c5c5;
@@ -906,10 +906,52 @@ p {
 ********************************************************************/
 .video-background {
   background: #000;
-  position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99;
+  padding: 100px;
 }
+.video-background .kolom{
+    flex: 70%;
+  padding: 10px;
+}
+.video-background .baris{
+    display: flex;
+}
+.video-background li{
+    display:inline-block;
+    border-radius : 100%;
+    size: 50px;
+    padding:20px;
+    color: #000;
+    text-align: center;
+    position: relative;
+    width: 30%;
+}
+.video-background .image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.video-background .overlay {
+    position: absolute;
+    border-radius: 100%;
+    padding: 0px;
+    size: 50px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: transparent;
+  }
+.video-background li:hover .overlay {
+    opacity: 1;
+  }
+.video-background .text {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 .video-foreground,
 .video-background iframe {
   position: absolute;
@@ -991,3 +1033,5 @@ p {
 .telp{
     background-image: url(../images/dis/kombitransparent.png)
 }
+
+
