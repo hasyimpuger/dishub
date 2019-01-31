@@ -147,6 +147,9 @@
 <!-- page script -->
 <script>
  $(document).ready(function(){
+
+  $('title').html($('title').html()+' | Data Berita');
+
     tampil_data_berita();   //pemanggilan fungsi tampil berita.
 
     $('#mytable').dataTable();
@@ -199,7 +202,6 @@
       });
       return false;
     });
-
 
     //GET HAPUS
     $('#show_data').on('click','.item_hapus',function(){

@@ -611,8 +611,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="title">
                     <h3>Info Seputar Dinas Perhubungan</h3>
                 </div>
-                <div class="row-fluid team">
-                    <div class="span4" id="first-person">
+                <div class="row-fluid team" id="iki">
+                    <div class="span4">
                         <div class="thumbnail">
                             <img src="<?php echo base_url() ?>assets/images/dis/261118-ijin-angkutan-barang-4.jpg" alt="team 1">
                             <h3>Lalu Lintas</h3>
@@ -634,7 +634,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </li>
                             </ul>
                             <div class="mask">
-                                <h2>Copywriter</h2>
+                                <h2></h2>
                                 <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
                             </div>
                         </div>
@@ -1043,5 +1043,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <script src="js/respond.min.js"></script>
         <![endif]-->
         <script type="text/javascript" src="<?php echo base_url() ?>assets/js/app.js"></script>
+        <script type="text/javascript">
+ $(document).ready(function(){
+             $.ajax({
+        type  : 'ajax',
+        url   : '<?php echo base_url()?>admin/data_berita',
+        async : false,
+        dataType : 'json',
+        success : function(data){
+            var html = '';
+            var i;
+            for (i=0; i<3; i++) {
+                html += '<div class="span4"><div class="thumbnail"><img src="<?php echo base_url() ?>upload/'+data[i].gambar+'" alt="image"><ul class="social"><li><a href=""><span class="icon-facebook-circled"></span></a></li><li><a href=""><span class="icon-twitter-circled"></span></a></li><li><a href=""><span class="icon-linkedin-circled"></span></a></li></ul><div class="mask"><h3>'+data[i].judul+'</h3><p>'+data[i].konten.substr(0,150)+'...</p></div></div></div>';
+            }
+          $('#iki').html(html);
+        }
+
+      });
+         });
+        </script>
     </body>
 </html>

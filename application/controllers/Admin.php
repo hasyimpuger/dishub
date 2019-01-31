@@ -8,6 +8,7 @@ class Admin extends CI_Controller {
 		$this->load->library('datatables'); //load library ignited-dataTable
 		$this->load->model('mberita'); //load model mberita
 		$this->load->model('muser'); 
+		$this->load->model('mlain'); 
 	}
 
 	public function index()
@@ -42,10 +43,29 @@ class Admin extends CI_Controller {
 	}
 	public function set_pengaturan()
 	{
-		$username = $this->input->post('username');
-		$password = $this->input->post('password');
-		$id 	  = $this->session->userdata('iduser');
-		$data 	  = $this->muser->update_user($username,md5($password),$id);
+		$notelp 	= $this->input->post('notelp');
+		$fax 		= $this->input->post('fax');
+		$email 		= $this->input->post('email');
+		$web 		= $this->input->post('web');
+		$data 	  	= $this->mlain->update_data($notelp,$fax,$email,$web);
+
+		$username 	 = $this->input->post('username');
+		$oldpassword = $this->input->post('oldpassword');
+		$password 	 = $this->input->post('password');
+		$pass 		 = $this->muser->get_user()->row_array();
+		$id 	  	= $this->session->userdata('iduser');
+		if($password != "" ){ //ganti password -
+			if($oldpassword == $pass['pass']){ //ganti password --
+				$password = md5($password);
+			} else { //tidak sama
+				$password = $pass['pass'];
+			}
+		} else { //tidak ganti password
+			$password = $pass['pass'];
+		}
+		$data 	  	= $this->muser->update_user($username,$password,$id);
+		
+		json_encode($data);
 	}
 	public function masuk()
 	{
@@ -59,6 +79,11 @@ class Admin extends CI_Controller {
 	function get_berita(){
 		$id 	= $this->input->get('id');
 		$data 	= $this->mberita->get_berita_by_kode($id);
+		echo json_encode($data);
+	}
+
+	function get_data(){
+		$data = $this->mlain->data_list()->result();
 		echo json_encode($data);
 	}
 
