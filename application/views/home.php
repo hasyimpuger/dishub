@@ -8,65 +8,132 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * License: http://graphberry.com/pages/license
 -->
 <html lang="en">
-    
-    <head>
-        <meta charset=utf-8>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dinas Perhubungan Kota Surakarta</title>
-        <!-- Load Roboto font -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-        <!-- Load css styles -->
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap-responsive.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/pluton.css" />
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinas Perhubungan Kota Surakarta</title>
+    <!-- Load Roboto font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- Load css styles -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/pluton.css" />
         <!--[if IE 7]>
             <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
-        <![endif]-->
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/jquery.cslider.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/jquery.bxslider.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/animate.css" />
-        <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-144.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-114.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url() ?>assets/images/apple-touch-icon-72.png">
-        <link rel="apple-touch-icon-precomposed" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-57.png">
-        <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/dis/logodepan.png">
-    </head>
-    
-    <body>
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a href="#" class="brand">
-                        <img src="<?php echo base_url() ?>assets/images/dis/Pemkot_Surakarta.png" alt="Logo" />
-                        <!-- This is website logo -->
-                    </a>
-                    <!-- Navigation button, visible on small resolution -->
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <i class="icon-menu"></i>
-                    </button>
-                    <!-- Main navigation -->
-                    <div class="nav-collapse collapse pull-right">
-                        <ul class="nav" id="top-navigation">
-                            <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="#service">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#clients">Clients</a></li>
-                            <li><a href="#price">Price</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
+            <![endif]-->
+            <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/jquery.cslider.css" />
+            <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/jquery.bxslider.css" />
+            <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/animate.css" />
+            <!-- Fav and touch icons -->
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-144.png">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-114.png">
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url() ?>assets/images/apple-touch-icon-72.png">
+            <link rel="apple-touch-icon-precomposed" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-57.png">
+            <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/dis/logodepan.png">
+            <style type="text/css">
+                .a2{
+                    position: absolute;
+                    opacity: 0;
+                    transition: .5s ease;
+                    background-color: transparent;
+                }
+                .a2:hover{
+                    opacity: 1;
+                }
+                td{
+                    padding: 15px 55px;
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="navbar" style="background:RGBA(24, 26, 28, 0); position: fixed">
+                <div class="navbar-inner" style="background: RGBA(24, 26, 28, 0.34)">
+                    <div class="container">
+                        <a href="#" class="brand">
+                        <img src="<?php echo base_url() ?>assets/images/dis/Pemkot_Surakarta.png" alt="Logo" style="width: 42px; height:59px"/>
+                            <!-- This is website logo -->
+                        </a>
+                        <!-- Navigation button, visible on small resolution -->
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <i class="icon-menu"></i>
+                        </button>
+                        <!-- Main navigation -->
+                        <div class="nav-collapse collapse pull-right">
+                            <!-- <ul class="nav" id="top-navigation">
+                                <li class="active"><a href="#home">Home</a></li>
+                                <li><a href="#service">Services</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#clients">Clients</a></li>
+                                <li><a href="#price">Price</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul> -->
+                        </div>
+                        <!-- End main navigation -->
                     </div>
-                    <!-- End main navigation -->
                 </div>
             </div>
-        </div>
-        <!-- background video landing page -->
-        <div class="video-background">
-            <div class="baris">
-                <div class="kolom" style="Scolumn-width:60%">
+            <!-- background video landing page -->
+            <div class="video-background" style="padding: 50px">
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <a href="">
+                                <img class="a2" src="assets/images/bunderan/IconSijaka2-1.png">
+                                <img class="a1" src="assets/images/bunderan/IconSijaka.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img class="a2" src="assets/images/bunderan/IconEuji2-1.png">
+                                <img class="a1" src="assets/images/bunderan/IconEuji.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img class="a2" src="assets/images/bunderan/IconInfoLalin2-1.png">
+                                <img class="a1" src="assets/images/bunderan/IconInfoLalin.png">
+                            </a>
+                        </td>
+                        <td rowspan="2">
+                            <img src="<?php echo base_url() ?>assets/images/logo-dinas-perhubungan-1-300x290.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <img class="a2" src="assets/images/bunderan/IconJW2.png">
+                                <img class="a1" src="assets/images/bunderan/IconJW.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img class="a2" src="assets/images/bunderan/IconBST2-1.png">
+                                <img class="a1" src="assets/images/bunderan/IconBST.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img class="a2" src="assets/images/bunderan/IconDerek2-1.png">
+                                <img class="a1" src="assets/images/bunderan/IconDerek.png">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <hr>
+                        </td>
+                        <td align="center">
+                            Dinas Perhubungan<br>Kota Yogyakarta
+                        </td>
+                    </tr>
+                </table>
+<!--             <div class="baris">
+                <div class="kolom" style="column-width:60%">
                     <ul>
                         <li><a href="#/"><img class="image" src="assets/images/bunderan/IconBST.png"><div class="overlay"><img class="text" src="assets/images/bunderan/IconBST2-1.png"></div></a></li>
                         <li><a href="#/"><img class="image" src="assets/images/bunderan/IconBST.png"><div class="overlay"><img class="text" src="assets/images/bunderan/IconBST2-1.png"></div></a></li>
@@ -82,10 +149,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      <h2>Column 2</h2>
                         <p>Some text..</p>
                  </div>
-            </div>
-        </div>
-        <!-- Start home section -->
-        <div id="home">
+             </div> -->
+         </div>
+         <!-- Start home section -->
+         <div id="home">
             <!-- Start cSlider -->
             <div id="da-slider" class="da-slider">
                 <div class="triangle"></div>
@@ -593,13 +660,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </p>
             <div> 
                 <ul>
-                    <li><a href="#/"><img src="assets/images/dis/Icon-Uji.png"><h4>bidang pengujian</h4></a></li>
-                    <li><a href="#/"><img src="assets/images/dis/icon-Lalin.png" ><h4>bidang pengujian</h4></a></li>
-                    <li><a href="#/"><img src="assets/images/dis/icon-Parkir.png" ><h4>bidang pengujian</h4></a></li>
-                    <li><a href="#/"><img src="assets/images/dis/icon-angkutan.png" ><h4>bidang pengujian</h4></a></li>
-                    <li><a href="#/"><img src="assets/images/dis/icon-sekre.png" ><h4>bidang pengujian</h4></a></li>
+                    <li><a href="#/"><img src="assets/images/dis/Icon-Uji.png"><h4>Bidang Pengujian Kendaraan Bermotor</h4></a></li>
+                    <li><a href="#/"><img src="assets/images/dis/icon-Lalin.png" ><h4>Bidang Lalu Lintas</h4></a></li>
+                    <li><a href="#/"><img src="assets/images/dis/icon-Parkir.png" ><h4>Bidang Perparkiran</h4></a></li>
+                    <li><a href="#/"><img src="assets/images/dis/icon-angkutan.png" ><h4>Bidang Angkutan</h4></a></li>
+                    <li><a href="#/"><img src="assets/images/dis/icon-sekre.png" ><h4>Sekretariat</h4></a></li>
                 </ul>   
-             </div>
+            </div>
         </div>
         <div class="call">
             <h1>CALL CENTER 08112654322</h1>
@@ -893,174 +960,207 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- Newsletter section start -->
         <br><div>
         <div class="telp">
-        <div class="section third-section">
-            <div class="container newsletter">
-                <div class="sub-section">
-                    <div class="title clearfix">
-                        <div class="pull-left">
-                            <h3>Newsletter</h3>
+            <div class="section third-section">
+                <div class="container newsletter">
+                    <div class="sub-section">
+                        <div class="title clearfix">
+                            <div class="pull-left">
+                                <h3>Newsletter</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="success-subscribe" class="alert alert-success invisible">
-                    <strong>Well done!</strong>You successfully subscribet to our newsletter.</div>
-                <div class="row-fluid">
-                    <div class="span5">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    </div>
-                    <div class="span7">
-                        <form class="inline-form">
-                            <input type="email" name="email" id="nlmail" class="span8" placeholder="Enter your email" required />
-                            <button id="subscribe" class="button button-sp">Subscribe</button>
-                        </form>
-                        <div id="err-subscribe" class="error centered">Please provide valid email address.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter section end -->
-        <!-- Contact section start -->
-        <div id="contact" class="contact">
-            <div class="section secondary-section">
-                <div class="container">
-                    <div class="title">
-                        <h1>Contact Us</h1>
-                        <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
-                    </div>
-                </div>
-                <div class="map-wrapper">
-                    <div class="map-canvas" id="map-canvas">Loading map...</div>
-                    <div class="container">
+                    <div id="success-subscribe" class="alert alert-success invisible">
+                        <strong>Well done!</strong>You successfully subscribet to our newsletter.</div>
                         <div class="row-fluid">
-                            <div class="span5 contact-form centered">
-                                <h3>Say Hello</h3>
-                                <div id="successSend" class="alert alert-success invisible">
-                                    <strong>Well done!</strong>Your message has been sent.</div>
-                                <div id="errorSend" class="alert alert-error invisible">There was an error.</div>
-                                <form id="contact-form" action="php/mail.php">
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            <input class="span12" type="text" id="name" name="name" placeholder="* Your name..." />
-                                            <div class="error left-align" id="err-name">Please enter name.</div>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            <input class="span12" type="email" name="email" id="email" placeholder="* Your email..." />
-                                            <div class="error left-align" id="err-email">Please enter valid email adress.</div>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            <textarea class="span12" name="comment" id="comment" placeholder="* Comments..."></textarea>
-                                            <div class="error left-align" id="err-comment">Please enter your comment.</div>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            <button id="send-mail" class="message-btn">Send message</button>
-                                        </div>
-                                    </div>
+                            <div class="span5">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                            <div class="span7">
+                                <form class="inline-form">
+                                    <input type="email" name="email" id="nlmail" class="span8" placeholder="Enter your email" required />
+                                    <button id="subscribe" class="button button-sp">Subscribe</button>
                                 </form>
+                                <div id="err-subscribe" class="error centered">Please provide valid email address.</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="span9 center contact-info">
-                        <p>123 Fifth Avenue, 12th,Belgrade,SRB 11000</p>
-                        <p class="info-mail">ourstudio@somemail.com</p>
-                        <p>+11 234 567 890</p>
-                        <p>+11 286 543 850</p>
-                        <div class="title">
-                            <h3>We Are Social</h3>
+                <!-- Newsletter section end -->
+                <!-- Contact section start -->
+                <div id="contact" class="contact">
+                    <div class="section secondary-section">
+                        <div class="container">
+                            <div class="title">
+                                <h1>Berhubungan Dengan Kami</h1>
+                                <p>Sampaikan Pesan Anda, Melalui Form Dibawah Ini</p>
+                            </div>
+                        </div>
+                        <div class="map-wrapper">
+                            <!-- <div class="map-canvas" id="map-canvas">Loading map...</div> -->
+                            <div class="container">
+                                <div class="row-fluid">
+                                    <div class="span5 contact-form" style="color: #000">
+                                        <h3>Dinas Perhubungan Kota Surakarta</h3>
+                                        <table style="margin:5px">
+                                            <tr>
+                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
+                                                <td style="padding: 10px">Jl. Menteri Supeno No.7 Manahan Surakarta</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
+                                                <td style="padding: 10px"><a href="tel:(0271)717470">(0271) 717470</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
+                                                <td style="padding: 10px"><a href="fax:(0271)717470">(0271) 717470</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
+                                                <td style="padding: 10px"><a href="mailto:dishub@surakarta.go.id">dishub@surakarta.go.id</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
+                                                <td style="padding: 10px"><a href="www.dishub.surakarta.go.id">www.dishub.surakarta.go.id</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="span2"></div>
+                                    <div class="span5">
+                                        <!-- <h3>Say Hello</h3> -->
+                                        <div id="successSend" class="alert alert-success invisible">
+                                            <strong>Well done!</strong>Your message has been sent.</div>
+                                            <div id="errorSend" class="alert alert-error invisible">There was an error.</div>
+                                            <form id="contact-form" action="php/mail.php">
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <input class="span12" type="text" id="name" name="name" placeholder="* Nama Anda" />
+                                                        <div class="error left-align" id="err-name">Please enter name.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <input class="span12" type="email" name="email" id="email" placeholder="* Email Anda" />
+                                                        <div class="error left-align" id="err-email">Please enter valid email adress.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <input class="span12" type="text" id="subyek" name="subyek" placeholder="* Subyek" />
+                                                        <div class="error left-align" id="err-subyek">Please enter name.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <textarea class="span12" name="comment" id="comment" placeholder="* Pesan Anda"></textarea>
+                                                        <div class="error left-align" id="err-comment">Please enter your comment.</div>
+                                                    </div>
+                                                    <div class="left-align" style="color: #000">* Wajib diisi</div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <button id="send-mail" class="message-btn">Kirim</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="span9 center contact-info">
+                                    <p>123 Fifth Avenue, 12th,Belgrade,SRB 11000</p>
+                                    <p class="info-mail">ourstudio@somemail.com</p>
+                                    <p>+11 234 567 890</p>
+                                    <p>+11 286 543 850</p>
+                                    <div class="title">
+                                        <h3>We Are Social</h3>
+                                    </div>
+                                </div>
+                                <div class="row-fluid centered">
+                                    <ul class="social">
+                                        <li>
+                                            <a href="">
+                                                <span class="icon-facebook-circled"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="icon-twitter-circled"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="icon-linkedin-circled"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="icon-pinterest-circled"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="icon-dribbble-circled"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="icon-gplus-circled"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row-fluid centered">
-                        <ul class="social">
-                            <li>
-                                <a href="">
-                                    <span class="icon-facebook-circled"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="icon-twitter-circled"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="icon-linkedin-circled"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="icon-pinterest-circled"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="icon-dribbble-circled"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="icon-gplus-circled"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
-        </div>
-        </div>
-        <!-- Contact section edn -->
-        <!-- Footer section start -->
-        <div class="footer">
-            <p>&copy; 2013 Theme by <a href="http://www.graphberry.com">GraphBerry</a>, <a href="http://goo.gl/NM84K2">Documentation</a></p>
-        </div>
-        <!-- Footer section end -->
-        <!-- ScrollUp button start -->
-        <div class="scrollup">
-            <a href="#">
-                <i class="icon-up-open"></i>
-            </a>
-        </div>
-        <!-- ScrollUp button end -->
-        <!-- Include javascript -->
-        <script src="<?php echo base_url() ?>assets/js/jquery.js"></script>
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.mixitup.js"></script>
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/bootstrap.js"></script>
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/modernizr.custom.js"></script>
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.bxslider.js"></script>
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.cslider.js"></script>
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.placeholder.js"></script>
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.inview.js"></script>
-        <!-- Load google maps api and call initializeMap function defined in app.js -->
-        <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
-        <!-- css3-mediaqueries.js for IE8 or older -->
+                <!-- Contact section edn -->
+                <!-- Footer section start -->
+                <div class="footer">
+                    <p>&copy; 2013 Theme by <a href="http://www.graphberry.com">GraphBerry</a>, <a href="http://goo.gl/NM84K2">Documentation</a></p>
+                </div>
+                <!-- Footer section end -->
+                <!-- ScrollUp button start -->
+                <div class="scrollup">
+                    <a href="#">
+                        <i class="icon-up-open"></i>
+                    </a>
+                </div>
+                <!-- ScrollUp button end -->
+                <!-- Include javascript -->
+                <script src="<?php echo base_url() ?>assets/js/jquery.js"></script>
+                <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.mixitup.js"></script>
+                <script type="text/javascript" src="<?php echo base_url() ?>assets/js/bootstrap.js"></script>
+                <script type="text/javascript" src="<?php echo base_url() ?>assets/js/modernizr.custom.js"></script>
+                <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.bxslider.js"></script>
+                <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.cslider.js"></script>
+                <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.placeholder.js"></script>
+                <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.inview.js"></script>
+                <!-- Load google maps api and call initializeMap function defined in app.js -->
+                <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
+                <!-- css3-mediaqueries.js for IE8 or older -->
         <!--[if lt IE 9]>
             <script src="js/respond.min.js"></script>
-        <![endif]-->
-        <script type="text/javascript" src="<?php echo base_url() ?>assets/js/app.js"></script>
-        <script type="text/javascript">
- $(document).ready(function(){
-             $.ajax({
-        type  : 'ajax',
-        url   : '<?php echo base_url()?>admin/data_berita',
-        async : false,
-        dataType : 'json',
-        success : function(data){
-            var html = '';
-            var i;
-            for (i=0; i<3; i++) {
-                html += '<div class="span4"><div class="thumbnail"><img src="<?php echo base_url() ?>upload/'+data[i].gambar+'" alt="image"><ul class="social"><li><a href=""><span class="icon-facebook-circled"></span></a></li><li><a href=""><span class="icon-twitter-circled"></span></a></li><li><a href=""><span class="icon-linkedin-circled"></span></a></li></ul><div class="mask"><h3>'+data[i].judul+'</h3><p>'+data[i].konten.substr(0,150)+'...</p></div></div></div>';
-            }
-          $('#iki').html(html);
-        }
+            <![endif]-->
+            <script type="text/javascript" src="<?php echo base_url() ?>assets/js/app.js"></script>
+            <script type="text/javascript">
+               $(document).ready(function(){
+                   $.ajax({
+                    type  : 'ajax',
+                    url   : '<?php echo base_url()?>admin/data_berita',
+                    async : false,
+                    dataType : 'json',
+                    success : function(data){
+                        var html = '';
+                        var i;
+                        for (i=0; i<3; i++) {
+                            html += '<div class="span4"><div class="thumbnail"><img src="<?php echo base_url() ?>upload/'+data[i].gambar+'" alt="image"><div class="mask"><h3>'+data[i].judul+'</h3><p>'+data[i].konten.substr(0,150)+'...</p></div></div></div>';
+                        }
+                        $('#iki').html(html);
+                    }
 
-      });
-         });
-        </script>
-    </body>
-</html>
+                });
+               });
+           </script>
+       </body>
+       </html>
