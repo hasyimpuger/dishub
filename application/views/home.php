@@ -21,48 +21,51 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap-responsive.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/pluton.css" />
-        <!--[if IE 7]>
-            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
-            <![endif]-->
-            <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/jquery.cslider.css" />
-            <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/jquery.bxslider.css" />
-            <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/animate.css" />
-            <!-- Fav and touch icons -->
-            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-144.png">
-            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-114.png">
-            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url() ?>assets/images/apple-touch-icon-72.png">
-            <link rel="apple-touch-icon-precomposed" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-57.png">
-            <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/dis/logodepan.png">
-            <style type="text/css">
-                .a2{
-                    position: absolute;
-                    opacity: 0;
-                    transition: .5s ease;
-                    background-color: transparent;
-                }
-                .a2:hover{
-                    opacity: 1;
-                }
-                td{
-                    padding: 15px 55px;
-                }
-            </style>
-        </head>
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+    <![endif]-->
 
-        <body>
-            <div class="navbar" style="background:RGBA(24, 26, 28, 0); position: fixed">
-                <div class="navbar-inner" style="background: RGBA(24, 26, 28, 0.34)">
-                    <div class="container">
-                        <a href="#" class="brand">
-                            <img src="<?php echo base_url() ?>assets/images/dis/Pemkot_Surakarta.png" alt="Logo" style="width: 42px; height:59px"/>
-                            <!-- This is website logo -->
-                        </a>
-                        <!-- Navigation button, visible on small resolution -->
-                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <i class="icon-menu"></i>
-                        </button>
-                        <!-- Main navigation -->
-                        <div class="nav-collapse collapse pull-right">
+    <!-- FontAwesome 4.3.0 -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/jquery.cslider.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/animate.css" />
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url() ?>assets/images/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo base_url() ?>assets/images/ico/apple-touch-icon-57.png">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/dis/logodepan.png">
+    <style type="text/css">
+        .a2{
+            position: absolute;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: transparent;
+        }
+        .a2:hover{
+            opacity: 1;
+        }
+        td{
+            padding: 15px 55px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" style="background:RGBA(24, 26, 28, 0); position: fixed">
+        <div class="navbar-inner" style="background: RGBA(24, 26, 28, 0.34)">
+            <div class="container">
+                <a href="#" class="brand">
+                    <img src="<?php echo base_url() ?>assets/images/dis/Pemkot_Surakarta.png" alt="Logo" style="width: 42px; height:59px"/>
+                    <!-- This is website logo -->
+                </a>
+                <!-- Navigation button, visible on small resolution -->
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <i class="icon-menu"></i>
+                </button>
+                <!-- Main navigation -->
+                <div class="nav-collapse collapse pull-right">
                             <!-- <ul class="nav" id="top-navigation">
                                 <li class="active"><a href="#home">Home</a></li>
                                 <li><a href="#service">Services</a></li>
@@ -152,10 +155,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
              </div> -->
          </div>
          <!-- Start home section -->
-        <!-- End home section -->
-        <!-- Service section start -->
-        z
-        <!-- Service section end -->
+         <!-- End home section -->
+         <!-- Service section start -->
+         z
+         <!-- Service section end -->
         <!-- Portfolio section start --> <!--
         <div class="section secondary-section " id="portfolio">
             <div class="triangle"></div>
@@ -560,95 +563,95 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         
         <div class="telp" id="about">
             <div style="background-color:grey;text-align:center;font-family:Montserrat">
-            <div class="container">
-                <div class="title">
-                    <h3>Info Seputar Dinas Perhubungan</h3>
-                </div>
-                <div class="row-fluid team" id="iki">
-                    <div class="span4">
-                        <div class="thumbnail">
-                            <img src="<?php echo base_url() ?>assets/images/dis/261118-ijin-angkutan-barang-4.jpg" alt="team 1">
-                            <h3>Lalu Lintas</h3>
-                            <ul class="social">
-                                <li>
-                                    <a href="">
-                                        <span class="icon-facebook-circled"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <span class="icon-twitter-circled"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <span class="icon-linkedin-circled"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="mask">
-                                <h2></h2>
-                                <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
+                <div class="container">
+                    <div class="title">
+                        <h3>Info Seputar Dinas Perhubungan</h3>
+                    </div>
+                    <div class="row-fluid team" id="iki">
+                        <div class="span4">
+                            <div class="thumbnail">
+                                <img src="<?php echo base_url() ?>assets/images/dis/261118-ijin-angkutan-barang-4.jpg" alt="team 1">
+                                <h3>Lalu Lintas</h3>
+                                <ul class="social">
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-facebook-circled"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-twitter-circled"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-linkedin-circled"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="mask">
+                                    <h2></h2>
+                                    <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="span4" id="second-person">
-                        <div class="thumbnail">
-                            <img src="<?php echo base_url() ?>assets/images/dis/221118-kader-keselamatan-1.jpg" alt="team 1">
-                            <h3>Seputar Kota</h3>
-                            <ul class="social">
-                                <li>
-                                    <a href="">
-                                        <span class="icon-facebook-circled"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <span class="icon-twitter-circled"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <span class="icon-linkedin-circled"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="mask">
-                                <h2>Designer</h2>
-                                <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
+                        <div class="span4" id="second-person">
+                            <div class="thumbnail">
+                                <img src="<?php echo base_url() ?>assets/images/dis/221118-kader-keselamatan-1.jpg" alt="team 1">
+                                <h3>Seputar Kota</h3>
+                                <ul class="social">
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-facebook-circled"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-twitter-circled"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-linkedin-circled"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="mask">
+                                    <h2>Designer</h2>
+                                    <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="span4" id="third-person">
-                        <div class="thumbnail">
-                            <img src="<?php echo base_url() ?>assets/images/dis/FeederBST.jpg" alt="team 1">
-                            <h3>Transportasi</h3>
-                            <ul class="social">
-                                <li>
-                                    <a href="">
-                                        <span class="icon-facebook-circled"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <span class="icon-twitter-circled"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <span class="icon-linkedin-circled"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="mask">
-                                <h2>Photographer</h2>
-                                <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
+                        <div class="span4" id="third-person">
+                            <div class="thumbnail">
+                                <img src="<?php echo base_url() ?>assets/images/dis/FeederBST.jpg" alt="team 1">
+                                <h3>Transportasi</h3>
+                                <ul class="social">
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-facebook-circled"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-twitter-circled"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-linkedin-circled"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="mask">
+                                    <h2>Photographer</h2>
+                                    <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div></div>
-                <div>
-                <br><br><br>
+                    </div></div>
+                    <div>
+                        <br><br><br>
               <!--  <div class="about-text centered">
                     <h3>About Us</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -895,20 +898,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <td style="padding: 10px">Jl. Menteri Supeno No.7 Manahan Surakarta</td>
                                             </tr> -->
                                             <tr>
-                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
-                                                <td style="padding: 10px"><a href="tel:(0271)717470" id="notelp">(0271) 717470</a></td>
+                                            <td style="padding: 10px; text-align: left;"><i class="fa fa-phone"></i></td>
+                                                <td style="padding: 10px; text-align: left;"><a href="tel:(0271)717470" id="notelp">(0271) 717470</a></td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
-                                                <td style="padding: 10px"><a href="fax:(0271)717470" id="fax">(0271) 717470</a></td>
+                                                <td style="padding: 10px; text-align: left;"><i class="fa fa-fax"></i></td>
+                                                <td style="padding: 10px; text-align: left;"><a href="fax:(0271)717470" id="fax">(0271) 717470</a></td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
-                                                <td style="padding: 10px"><a href="mailto:dishub@surakarta.go.id" id="email">dishub@surakarta.go.id</a></td>
+                                                <td style="padding: 10px; text-align: left;"><i class="fa fa-envelope"></i></td>
+                                                <td style="padding: 10px; text-align: left;"><a href="mailto:dishub@surakarta.go.id" id="email">dishub@surakarta.go.id</a></td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
-                                                <td style="padding: 10px"><a href="www.dishub.surakarta.go.id" id="web">www.dishub.surakarta.go.id</a></td>
+                                                <td style="padding: 10px; text-align: left;"><i class="fa fa-globe"></i></td>
+                                                <td style="padding: 10px; text-align: left;"><a href="www.dishub.surakarta.go.id" id="web">www.dishub.surakarta.go.id</a></td>
                                             </tr>
                                         </table>
                                     </div>
@@ -1032,9 +1035,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <![endif]-->
             <script type="text/javascript" src="<?php echo base_url() ?>assets/js/app.js"></script>
             <script type="text/javascript">
-             $(document).ready(function(){
+               $(document).ready(function(){
 
-                 $.ajax({
+                   $.ajax({
                     type  : 'ajax',
                     url   : '<?php echo base_url()?>admin/data_berita',
                     async : false,
@@ -1049,7 +1052,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     }
                 });
 
-                 $.ajax({
+                   $.ajax({
                     type  : 'ajax',
                     url   : '<?php echo base_url()?>admin/get_data',
                     async : false,
@@ -1063,7 +1066,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
               });
 
-             });
-         </script>
-     </body>
-     </html>
+               });
+           </script>
+       </body>
+       </html>
