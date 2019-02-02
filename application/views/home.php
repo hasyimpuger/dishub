@@ -21,6 +21,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap-responsive.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/pluton.css" />
+  <!-- FontAwesome 4.3.0 -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!--[if IE 7]>
             <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
             <![endif]-->
@@ -50,8 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </head>
 
         <body>
-            <div class="navbar" style="background:RGBA(24, 26, 28, 0); position: fixed">
-                <div class="navbar-inner" style="background: RGBA(24, 26, 28, 0.34)">
+            <div class="navbar" style="background:RGBA(24, 26, 28, 0); position: fixed; width: 100%">
+                <div class="navbar-inner" style="background: RGBA(24, 26, 28, 0)">
                     <div class="container">
                         <a href="#" class="brand">
                             <img src="<?php echo base_url() ?>assets/images/dis/Pemkot_Surakarta.png" alt="Logo" style="width: 42px; height:59px"/>
@@ -81,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="video-background" style="padding: 50px">
             
 <div class="video-background">
-    <iframe class="video-background__video" width="1920" height="1080" src="https://www.youtube.com/watch?v=ZybTB8xqFhQ&feature=youtu.be" frameborder="0"></iframe>
+    <iframe class="video-background__video" width="1920" height="1080" src="http://www.youtube.com/embed/ZybTB8xqFhQ?autoplay=1" frameborder="0"></iframe>
 </div>
                 <table style="width: 100%">
                     <tr>
@@ -608,7 +610,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!-- Contact section edn -->
                 <!-- Footer section start -->
                 <div class="footer">
-                    <p>&copy; 2018 by <a href="">Komsi BB</a>, <a href="">UGM</a></p>
+                    <p>Copyright &copy; <?php echo date('Y') ?> <a href="">Dinas Perhubungan Kota Surakarta</a>.</p>
+                    <!-- <p>&copy; 2018 by <a href="">Komsi BB</a>, <a href="">UGM</a></p> -->
                 </div>
                 <!-- Footer section end -->
                 <!-- ScrollUp button start -->
