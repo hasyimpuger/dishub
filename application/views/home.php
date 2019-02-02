@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="navbar-inner" style="background: RGBA(24, 26, 28, 0.34)">
                     <div class="container">
                         <a href="#" class="brand">
-                        <img src="<?php echo base_url() ?>assets/images/dis/Pemkot_Surakarta.png" alt="Logo" style="width: 42px; height:59px"/>
+                            <img src="<?php echo base_url() ?>assets/images/dis/Pemkot_Surakarta.png" alt="Logo" style="width: 42px; height:59px"/>
                             <!-- This is website logo -->
                         </a>
                         <!-- Navigation button, visible on small resolution -->
@@ -1002,25 +1002,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="span5 contact-form" style="color: #000">
                                         <h3>Dinas Perhubungan Kota Surakarta</h3>
                                         <table style="margin:5px">
-                                            <tr>
+<!--                                             <tr>
                                                 <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
                                                 <td style="padding: 10px">Jl. Menteri Supeno No.7 Manahan Surakarta</td>
+                                            </tr> -->
+                                            <tr>
+                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
+                                                <td style="padding: 10px"><a href="tel:(0271)717470" id="notelp">(0271) 717470</a></td>
                                             </tr>
                                             <tr>
                                                 <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
-                                                <td style="padding: 10px"><a href="tel:(0271)717470">(0271) 717470</a></td>
+                                                <td style="padding: 10px"><a href="fax:(0271)717470" id="fax">(0271) 717470</a></td>
                                             </tr>
                                             <tr>
                                                 <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
-                                                <td style="padding: 10px"><a href="fax:(0271)717470">(0271) 717470</a></td>
+                                                <td style="padding: 10px"><a href="mailto:dishub@surakarta.go.id" id="email">dishub@surakarta.go.id</a></td>
                                             </tr>
                                             <tr>
                                                 <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
-                                                <td style="padding: 10px"><a href="mailto:dishub@surakarta.go.id">dishub@surakarta.go.id</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding: 10px"><i class="fa fa-home"></i>@</td>
-                                                <td style="padding: 10px"><a href="www.dishub.surakarta.go.id">www.dishub.surakarta.go.id</a></td>
+                                                <td style="padding: 10px"><a href="www.dishub.surakarta.go.id" id="web">www.dishub.surakarta.go.id</a></td>
                                             </tr>
                                         </table>
                                     </div>
@@ -1144,8 +1144,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <![endif]-->
             <script type="text/javascript" src="<?php echo base_url() ?>assets/js/app.js"></script>
             <script type="text/javascript">
-               $(document).ready(function(){
-                   $.ajax({
+             $(document).ready(function(){
+
+                 $.ajax({
                     type  : 'ajax',
                     url   : '<?php echo base_url()?>admin/data_berita',
                     async : false,
@@ -1158,9 +1159,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         }
                         $('#iki').html(html);
                     }
-
                 });
-               });
-           </script>
-       </body>
-       </html>
+
+                 $.ajax({
+                    type  : 'ajax',
+                    url   : '<?php echo base_url()?>admin/get_data',
+                    async : false,
+                    dataType : 'json',
+                    success : function(data){
+                      $('#fax').html(data[0].fax);
+                      $('#notelp').html(data[0].telp);
+                      $('#email').html(data[0].email);
+                      $('#web').html(data[0].web);
+                  }
+
+              });
+
+             });
+         </script>
+     </body>
+     </html>
