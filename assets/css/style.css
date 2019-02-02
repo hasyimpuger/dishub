@@ -27,7 +27,7 @@
 /*
 1. General
 **********************************************************************/
- body {
+body {
     font-family:'Roboto', sans-serif;
     color: #FFF;
     line-height:1.2em;
@@ -687,7 +687,7 @@ p {
 3.7 Contact
 ********************************************************************/
  .contact {
-    background: #c5c5c5;
+    background: white;
 }
 .contact h1, .contact h2, .contact h3, .contact h4, .contact h5, .contact h6, .contact .section .title > p, .contact .social > li > a {
     color: #181A1C;
@@ -906,54 +906,35 @@ p {
 5. Video Background
 ********************************************************************/
 .video-background {
-  background: #000;
+  background: transparent;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99;
-  padding: 100px;
-}
-.video-background .kolom{
-    flex: 70%;
-  padding: 10px;
-}
-.video-background .baris{
-    display: flex;
-}
-.video-background li{
-    display:inline-block;
-    border-radius : 100%;
-    size: 50px;
-    padding:20px;
-    color: #000;
-    text-align: center;
-    position: relative;
-    width: 30%;
+  padding: 50px;
+  position: relative absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 .video-background .image{
     display: block;
     width: 100%;
     height: auto;
 }
-.video-background .overlay {
-    position: absolute;
-    border-radius: 100%;
-    padding: 0px;
-    size: 50px;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: transparent;
-  }
-.video-background li:hover .overlay {
-    opacity: 1;
-  }
+
 .video-background .text {
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-.video-foreground,
 .video-background iframe {
   position: absolute;
   top: 0;
@@ -962,26 +943,7 @@ p {
   height: 100%;
   pointer-events: none;
 }
-#vidtop-content {
-	top: 0;
-	color: #fff;
-}
-.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
-.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
-.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
-}
-@media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
-}
+
 
 /*
 5. Officialsite
@@ -1009,12 +971,22 @@ p {
 }
 
 .off li {
+    align-content: center;
     display:inline-block;
     line-height: 32px;
     font-family:'Montserrat';
-    font-size: 16px;
+    font-size: 10px;
     color: #000;
     text-align: center;
+    padding: 10px;
+}
+.off h4{
+    font-size: 12px;
+}
+.off img{
+    align-content: center;
+    width:200px;
+    height:200px;
 }
 /*
 6. Callcenter
