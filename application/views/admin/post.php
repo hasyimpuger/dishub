@@ -15,7 +15,7 @@
     <div class='col-md-12'>
       <div class='box box-info'>
         <div class='box-header'>
-          <div class="pull-right"><a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#ModalaAdd"><span class="fa fa-plus"></span> Tambah Berita</a></div>
+          <div class="pull-right"><a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#ModalaAdd" onclick="CKEDITOR.replace('konten');"><span class="fa fa-plus"></span> Tambah Berita</a></div>
         </div><!-- /.box-header -->
         <div class='box-body pad'>
           <table class="table table-striped" id="mytable">
@@ -52,25 +52,25 @@
 
                   <div class="form-group">
                     <div class="col-xs-12">
-                     <textarea id="konten" name="konten" rows="10" cols="80"></textarea>
-                   </div>
-                 </div>
+                      <textarea id="konten" name="konten" rows="10" cols="80"></textarea>
+                    </div>
+                  </div>
 
-                 <div class="form-group">
-                  <label class="control-label col-xs-3" >Thumbnail berita</label>
-                  <div class="col-xs-9">
-                    <input name="gambar" id="gambar" class="form-control-file" type="file" required>
+                  <div class="form-group">
+                    <label class="control-label col-xs-3" >Thumbnail berita</label>
+                    <div class="col-xs-9">
+                      <input name="gambar" id="gambar" class="form-control-file" type="file" required>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="modal-footer">
+                <div class="modal-footer">
                 <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
                 <button class="btn btn-info" type="submit" id="btn_simpan" onClick="CKupdate();">Simpan</button>
-              </div>
-            </form>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
       <!--END MODAL ADD-->
 
       <!-- MODAL EDIT -->
@@ -192,6 +192,7 @@
         data : {id:id},
         success: function(data){
           $.each(data,function(){
+            CKEDITOR.replace('konten2');
             $('#ModalaEdit').modal('show');
             $('[name="id_edit"]').val(data.id);
             $('[name="judul_edit"]').val(data.judul);
@@ -297,8 +298,6 @@ function CKupdate(){
   $(function () {
     // Replace the <textarea id="editor1"> with a CKEditor
     // instance, using default configuration.
-    CKEDITOR.replace('konten');
-    CKEDITOR.replace('konten2');
     //bootstrap WYSIHTML5 - text editor
     $(".textarea").wysihtml5();
   });
